@@ -5,65 +5,50 @@ public class Alumno{
     private float nota;
     private String dni;
     
-
-    public Alumno(String nombre, String apellidos,String dni, float nota){
+ public Alumno(String nombre, String apellidos,String dni, float nota){
         this.nombre=nombre;
         this.apellidos=apellidos;
         this.dni=dni;
         this.nota=nota;
     }
 
-
-    public String getNombre() {
+public String getNombre() {
         return nombre;
     }
 
-
-    public void setNombre(String nombre) {
+ public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-
-    public String getApellidos() {
+public String getApellidos() {
         return apellidos;
     }
 
-
-    public void setApellidos(String apellidos) {
+ public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
 
-
-    public String getDni() {
+public String getDni() {
         return dni;
     }
 
-
-    public void setDni(String dni) {
+ public void setDni(String dni) {
         this.dni = dni;
     }
 
-
-    public float getNota() {
+ public float getNota() {
         return nota;
     }
 
-
-    public void setNota(float nota) {
+ public void setNota(float nota) {
         this.nota = nota;
     }
-
-
-    @Override
+ @Override
     public int hashCode() {
         return dni.hashCode() + nombre.hashCode() + apellidos.hashCode()+String.valueOf(nota).hashCode();
     }
-
-
-    @Override
+ @Override
     public String toString() {
         return "Alumno [nombre=" + nombre + ", apellidos=" + apellidos + ", nota=" + nota + ", dni=" + dni + "]";
     }
-
-    
 }
